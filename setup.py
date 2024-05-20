@@ -15,8 +15,7 @@ setup(
     keywords="python redis mutex",
     packages=find_packages(exclude=['docs', 'tests*']),
     install_requires=[
-        'future==0.16.0',
-        'redis==2.10.6'
+        'redis==4.6.0'
     ],
     project_urls={
         'Source': 'https://github.com/esquarer/py-redismutex/',
@@ -30,5 +29,10 @@ setup(
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
     ]
 )

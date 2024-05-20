@@ -90,6 +90,11 @@ class RedisMutex(object):
         """Deletes the mutex key from redis after validating the unique
         value for mutex.
         """
+        if self.__mkey is None:
+            raise MutexUnlockError(
+                "Unable to unlock. No key is set for the mutex."
+            )
+        
         stored_value = self.redis.get(self.__mkey)
 
         # The given key does not exists in redis

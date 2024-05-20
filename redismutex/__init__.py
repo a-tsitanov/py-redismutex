@@ -1,3 +1,4 @@
-from __future__ import absolute_import
-
 from .mutex import RedisMutex
+
+
+__all__ = ["RedisMutex"]
